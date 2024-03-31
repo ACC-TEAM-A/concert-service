@@ -4,6 +4,24 @@ server:
 spring:
   application:
     name: concertservice
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://concert-db.cze6ikicmgoq.ap-northeast-2.rds.amazonaws.com/concert?serverTimezone=Asia/Seoul
+    username: adminA
+    password: adminAAA!
+
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: true
+    properties:
+      hibernate:
+        format_sql: true
+        show-sql: true
 
 eureka:
   client:
