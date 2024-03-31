@@ -6,7 +6,7 @@ spring:
     name: concertservice
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://concert-db.cze6ikicmgoq.ap-northeast-2.rds.amazonaws.com/concert?serverTimezone=Asia/Seoul
+    url: jdbc:mariadb://concert-db.cze6ikicmgoq.ap-northeast-2.rds.amazonaws.com:3306/concert?serverTimezone=Asia/Seoul
     username: adminA
     password: adminAAA!
 
